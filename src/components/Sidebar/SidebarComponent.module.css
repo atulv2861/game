@@ -1,0 +1,46 @@
+.Sidebar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 0;
+    overflow: hidden;
+    width: 200px;
+    height: 100vh;
+    box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.22);
+    z-index: 999;
+    padding-left: 20px;
+    cursor: default;
+}
+
+.Container{
+    display: flex;
+    flex-direction: column;   
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 600; 
+    
+    
+}
+
+.Link{
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    cursor: pointer;
+}
+
+.Highlited{
+    display: flex;    
+    width: 120px;
+    height: 30px;  
+    border-radius: 12px;
+    padding-left: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.22);
+}
+
+.CliklableLink{
+    padding-left: 20px;
+    height: 30px;
+}

@@ -1,0 +1,221 @@
+.Wrapper {
+    overflow: hidden;
+    position: fixed;
+    width: 700px;
+    max-height: 550px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.22);
+    z-index: 99;
+    /* display: flex;
+    flex-direction: column;    
+    align-items: center; */
+    padding: 20px;
+
+}
+
+.Questions {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    margin-left: 50px;
+}
+
+.Slide {
+    /* position: relative; */
+    width: 50px;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.AddQuestion {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: gray;
+    border: none;
+    outline: none;
+    background: none;
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+.Heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 8px;
+    color: gray;
+    margin-top: 20px;
+}
+
+.InputContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.InputBox {
+    width: 600px;
+    height: 40px;
+    background: #fff;
+    box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.22);
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    font-size: large;
+    padding-left: 10px;
+}
+
+
+.OptionType {
+    display: flex;    
+    gap: 55px;
+}
+
+.QuizHeading {
+    display: flex;
+    align-items: center;
+}
+
+.OptionTypeContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 95px;
+}
+
+.Btn {
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+}
+
+.Button {
+    width: 240px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-weight: 600;
+    background: #fff;
+    box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+}
+
+
+
+.CancelnCreateBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    gap: 130px;
+}
+
+.RadioInputBox{
+    width: 200px;
+    height: 40px;
+    background: #fff; 
+    box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.22); 
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    font-size: large;
+    padding-left: 10px;
+}
+
+.Options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 40px;
+}
+
+.AddOptionButton{
+    width: 210px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.22);
+    margin-left: 10px;
+    cursor: pointer;
+}
+.AddOptions{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap:10px;
+}
+
+.TimerButton{
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+}
+
+.Timer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Close{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: -20px;
+    top: 25px;  
+    font-weight: 200;  
+    cursor: pointer;
+}
+
+.SelectedRadioBtn{
+    background:#60B84B;
+    color:white;      
+}
+
+.SelectedRadioBtn1{
+    background:#da7115;
+    color:rgb(49, 38, 38);      
+}
+
+.SelectedRadioBtn::placeholder{
+    color: white;
+}
+
+.TimerBtnColor{
+    background: red;
+}
+
+.ErrorMsg{
+    outline: 3px solid red;    
+  }
+
+  .ErrorMsg::placeholder{
+    color: red;
+}

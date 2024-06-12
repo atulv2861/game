@@ -1,0 +1,57 @@
+.FormWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 200px;
+    gap:20px;
+    padding-top: 20px;
+}
+
+.FieldWrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.Label{
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.InputBox{
+    width: 250px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: rgb(244, 240, 240);
+    border-radius: 8px;
+    font-size: large;
+    padding-left: 10px;
+}
+
+.FieldWrapper{
+
+}
+
+.Button{
+    width: 200px;
+    height: 35px;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    background: #A9BCFF; 
+    cursor: pointer;   
+}
+
+.ErrorMsg{
+    outline: 3px solid red;    
+  }
+
+  .ErrorMsg::placeholder{
+    color: red;
+}

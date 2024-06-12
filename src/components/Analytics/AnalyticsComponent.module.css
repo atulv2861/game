@@ -1,0 +1,40 @@
+.Wrapper{
+    margin-left:200px ;
+    overflow: hidden;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+
+.Cursor{
+  cursor: pointer;
+}
+
+.tBody{
+    background-color: #B3C4FF;
+    border-radius: 12px;
+    color: black;
+}
+.tInvBody{
+    background-color: rgb(232, 232, 244);
+    border-radius: 12px;
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;    
+  }
+
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
+
+  .Link{
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+ 

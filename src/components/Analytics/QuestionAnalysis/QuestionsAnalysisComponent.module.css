@@ -1,0 +1,12 @@
+.Wrapper{
+    margin-left:220px ;
+    overflow: hidden;
+    padding: 50px 100px 50px 100px;
+    background: rgb(229, 224, 224);
+}
+
+.Heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
