@@ -68,19 +68,10 @@ export default function LiveQuizComponent() {
 
 
         if (quizById?.quiz?.quizType === 'Poll_Type') {
-            result = obj1.map(obj1Item => {
-                // const matchedObj2Item = obj2.find(obj2Item => obj2Item._id === obj1Item.qId);                
-                // let optionIndex;
-                // if (matchedObj2Item?.optionType === "Text_ImageUrl") {
-                //     optionIndex = matchedObj2Item?.options?.findIndex(item => item.text === obj1Item.option.text && item.img === obj1Item.option.img);
-                // } else {
-                //     optionIndex = matchedObj2Item.options.indexOf(obj1Item.option);
-                // }
-
+            result = obj1.map(obj1Item => {               
                 return {
                     _id: obj1Item.qId,
-                    option: obj1Item.option,
-                    //option: optionIndex !== -1 ? optionIndex + 1 : 'Not found'
+                    option: obj1Item.option,                    
                 };
                 
             });

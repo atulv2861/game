@@ -195,8 +195,7 @@ export default function CreateQuizComponent({
     const handleQuizQuestionChange = (indx, e) => {
         let values = [...quizQuestions];
         if (e.target.name === "ImageUrl") {
-            if (values[selectedQuestion].options[indx]) {
-                //values[selectedQuestion].options[indx].img = e.target.value;
+            if (values[selectedQuestion].options[indx]) {                
                 values = values.map((item, itemIndex) => {
                     if (itemIndex === selectedQuestion) {
                         const updatedOptions = item.options.map((option, optionIndex) => {
@@ -209,8 +208,7 @@ export default function CreateQuizComponent({
                     }
                     return item;
                 });
-            } else {
-                //values[selectedQuestion].options[indx] = { "img": e.target.value };
+            } else {                
                 values = values?.map((item, itemIndex) => {
                     if (itemIndex === selectedQuestion) {
                         const updatedOptions = [...item.options];
@@ -222,8 +220,7 @@ export default function CreateQuizComponent({
             }
         }
         if (e.target.name === "Text") {
-            if (values[selectedQuestion].options[indx]) {
-                //values[selectedQuestion].options[indx].text = e.target.value;
+            if (values[selectedQuestion].options[indx]) {                
                 values = values.map((item, itemIndex) => {
                     if (itemIndex === selectedQuestion) {
                         const updatedOptions = item.options.map((option, optionIndex) => {
@@ -236,8 +233,7 @@ export default function CreateQuizComponent({
                     }
                     return item;
                 });
-            } else {
-                //values[selectedQuestion].options[indx] = { "text": e.target.value };
+            } else {                
                 values = values?.map((item, itemIndex) => {
                     if (itemIndex === selectedQuestion) {
                         const updatedOptions = [...item.options];
@@ -248,8 +244,7 @@ export default function CreateQuizComponent({
                 });
             }
         }
-        if (e.target.name === "options") {
-            //values[selectedQuestion].options[indx] = e.target.value;
+        if (e.target.name === "options") {           
             values = values?.map((item, itemIndex) => {
                 if (itemIndex === selectedQuestion) {
                     const updatedOptions = [...item.options];
@@ -258,8 +253,7 @@ export default function CreateQuizComponent({
                 }
                 return item;
             });
-        } else if (e.target.name === "answer") {
-            //values[selectedQuestion][e.target.name] = values[selectedQuestion].options[indx];
+        } else if (e.target.name === "answer") {            
             values[selectedQuestion] = {
                 ...values[selectedQuestion],
                 answer: values[selectedQuestion].options[indx]
@@ -551,14 +545,7 @@ export default function CreateQuizComponent({
                     {noOfOptions && noOfOptions?.map((item, indx) => (
                         item < 2 ?
                             <div className="radio-label" key={indx}>
-                                {/* <input
-                                    type="radio"
-                                    style={{ color: "red" }}
-                                    name="answer"
-                                    value={indx}
-                                    onChange={(e) => { handleRadioChange(indx); handleQuizQuestionChange(indx, e) }}
-                                    checked={selectedRadioBtn === indx}
-                                />&nbsp;&nbsp; */}
+                                
                                 <input
                                     className={`${Style.RadioInputBox}`}
                                     style={{marginLeft:"30px"}}
@@ -570,14 +557,7 @@ export default function CreateQuizComponent({
                                 />
                             </div> :
                             <div className="radio-label" key={indx}>
-                                {/* <input
-                                    type="radio"
-                                    style={{ color: "red" }}
-                                    name="answer"
-                                    value={indx}
-                                    onChange={(e) => { handleRadioChange(indx); handleQuizQuestionChange(indx, e) }}
-                                    checked={selectedRadioBtn === indx}
-                                />&nbsp;&nbsp; */}
+                               
                                 <input
                                     className={`${Style.RadioInputBox}`}
                                     style={{marginLeft:"30px"}}
@@ -605,14 +585,7 @@ export default function CreateQuizComponent({
                     {noOfOptions && noOfOptions?.map((item, indx) => (
                         item < 2 ?
                             <div className="radio-label" key={indx}>
-                                {/* <input
-                                    type="radio"
-                                    style={{ color: "red" }}
-                                    name="answer"
-                                    value={indx}
-                                    onChange={(e) => { handleRadioChange(indx); handleQuizQuestionChange(indx, e) }}
-                                    checked={selectedRadioBtn === indx}
-                                />&nbsp;&nbsp; */}
+                                
                                 <input
                                     className={`${Style.RadioInputBox}`}
                                     style={{marginLeft:"30px"}}
@@ -624,14 +597,7 @@ export default function CreateQuizComponent({
                                 />
                             </div> :
                             <div className="radio-label" key={indx}>
-                                {/* <input
-                                    type="radio"
-                                    style={{ color: "red" }}
-                                    name="answer"
-                                    value={indx}
-                                    onChange={(e) => { handleRadioChange(indx); handleQuizQuestionChange(indx, e) }}
-                                    checked={selectedRadioBtn === indx}
-                                />&nbsp;&nbsp; */}
+                                
                                 <input
                                     className={`${Style.RadioInputBox}`}
                                     style={{marginLeft:"30px"}}
@@ -659,14 +625,7 @@ export default function CreateQuizComponent({
                     {noOfOptions && noOfOptions?.map((item, indx) => (
                         item < 2 ?
                             <div className="radio-label" key={indx}>
-                                {/* <input
-                                    type="radio"
-                                    style={{ color: "red" }}
-                                    name="answer"
-                                    value={indx}
-                                    onChange={(e) => { handleRadioChange(indx); handleQuizQuestionChange(indx, e) }}
-                                    checked={selectedRadioBtn === indx}
-                                />&nbsp;&nbsp; */}
+                                
                                 <input
                                     className={`${Style.RadioInputBox}`}
                                     style={{marginLeft:"30px"}}
@@ -686,14 +645,7 @@ export default function CreateQuizComponent({
                                 />
                             </div> :
                             <div className="radio-label" key={indx}>
-                                {/* <input
-                                    type="radio"
-                                    style={{ color: "red" }}
-                                    name="answer"
-                                    value={indx}
-                                    onChange={(e) => { handleRadioChange(indx); handleQuizQuestionChange(indx, e) }}
-                                    checked={selectedRadioBtn === indx}
-                                />&nbsp;&nbsp; */}
+                               
                                 <input
                                     className={`${Style.RadioInputBox}`}
                                     style={{marginLeft:"30px"}}
