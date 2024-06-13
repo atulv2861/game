@@ -7,7 +7,7 @@ export default function PollQuestionComponent({ item,qno }) {
     useEffect(()=>{
         const data=assessmentDetails?.assessmentData?.filter(value=>value?.questionId==item?._id);
         setAssessment(data);
-    },[]);
+    },[assessmentDetails]);
     return (
         <>
             <div><h2>Q.{qno} {item?.question}</h2></div>

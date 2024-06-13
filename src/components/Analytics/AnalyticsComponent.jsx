@@ -35,17 +35,7 @@ export default function AnalyticsComponent() {
 
     const handleDeletePopup = async (id) => {
         setQuizId(id);
-        setIsConfirmDeletePopupOpen(true);
-        // if(isDeleted){
-        //     await handleDeleteQuiz(id);
-        //     setIsConfirmDeletePopupOpen(true);
-        //     toast.success('Quiz deleted successfully!');
-        //     const user = JSON.parse(getStorage("user"));
-        //     if(user){
-        //         await handleGetQuizByUserId(user?._id);
-        //     } 
-        // }
-
+        setIsConfirmDeletePopupOpen(true);      
     }
 
     const formatedDate = (dateStr) => {
@@ -55,8 +45,7 @@ export default function AnalyticsComponent() {
         return formattedDate;
     }
     const handleLinkShare = (id) => {
-        navigator.clipboard.writeText(`${process.env.REACT_APP_FRONTEND_URL}/live-quiz/${id}`);
-        //navigator.clipboard.writeText(`http://localhost:3000/live-quiz/${id}`);
+        navigator.clipboard.writeText(`${process.env.REACT_APP_FRONTEND_URL}/live-quiz/${id}`);        
         toast.success('Link copied to Clipboard');
     }
 

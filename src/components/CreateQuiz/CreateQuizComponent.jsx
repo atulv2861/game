@@ -23,7 +23,7 @@ export default function CreateQuizComponent({
     const [selectedQuestion, setSelectedQuestion] = useState(0);
     const [selectedRadioBtn, setSelectedRadioBtn] = useState(null);
     const [quizQuestions, setQuizQuestions] = useState([
-        { question: '', optionType: optionType, options: [], answer: '', timer: 0 }
+        { question: " ", optionType: optionType, options: [], answer: " ", timer: 0 }
     ]);
     const { handleCreateQuiz, handleGetQuizByUserId } = useQuiz();
     const { createdQuiz, quizByUserId } = useSelector((state) => state.quiz);
@@ -44,13 +44,11 @@ export default function CreateQuizComponent({
     }
 
     const handleCreateQuizzes = async () => {
-       
-        if (!quizQuestions[selectedQuestion]?.question?.trim()) {
+        if (!quizQuestions[selectedQuestion]?.question.trim()) {
             toast.error('Question should not be empty!');
             return;
         }
-
-        if (!quizQuestions[selectedQuestion]?.answer?.trim() && quizzieType==='Q&A') {
+        if (quizzieType==='Q&A' && !quizQuestions[selectedQuestion]?.answer.trim()) {
             toast.error('Please select the correct answer!');
             return;
         }
@@ -123,14 +121,14 @@ export default function CreateQuizComponent({
             return;
         }
 
-        if (!quizQuestions[selectedQuestion]?.answer?.trim() && quizzieType==='Q&A') {
+        if (quizzieType==='Q&A' && !quizQuestions[selectedQuestion]?.answer?.trim()) {
             toast.error('Please select the correct answer!');
             return;
         }
        
         const noOfQuestions = questions[questions.length - 1];
         setQuestions([...questions, noOfQuestions + 1]);
-        setQuizQuestions(prev => [...prev, { question: '', optionType: optionType, options: ["", ""], answer: '', timer: 0 }])
+        setQuizQuestions(prev => [...prev, { question: " ", optionType: optionType, options: ["", ""], answer: " ", timer: 0 }])
         setSelectedQuestion(noOfQuestions + 1)
         setNoOfOptions([1, 2]);
         setSelectedRadioBtn(null);
